@@ -1,5 +1,14 @@
+## Box setup
+
+````
+vagrant up
+````
+
 ## Install stuff
 
+Simple provisioning coming soon
+
+````
 sudo apt-get update
 sudo apt-get install git-core tmux htop mc vim curl python-setuptools python-pycurl build-essentials libsasl2-dev autoconf automake libtool openjdk-7-jre-headless openjdk-7-jdk maven python-dev libcurl4-openssl-dev
 
@@ -11,6 +20,7 @@ sudo gem install fpm
 
 export JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64/
 export LD_LIBRARY_PATH=$JAVA_HOME/jre/lib/amd64:$JAVA_HOME/jre/lib/amd64/server
+````
 
 ## Build mesos
 
