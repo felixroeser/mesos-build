@@ -25,15 +25,19 @@ export LD_LIBRARY_PATH=$JAVA_HOME/jre/lib/amd64:$JAVA_HOME/jre/lib/amd64/server
 ## Build mesos
 
 ````
-cd mesos
+cd app
+# Download a release from and unpack it
+# https://github.com/apache/mesos/releases
+curl https://github.com/apache/mesos/archive/0.15.0-rc4.tar.gz
+tar xfvz 0.15.0-rc4.tar.gz
+cd mesos-0.15.0-rc4
 ./bootstrap
 mkdir build && cd build
 ../configure
 make
 ````
 
-Need the python binding? Find them in: 
-
+Need the python binding? Find them in: build/src/python/dist/mesos-0.15.0-py2.7-linux-x86_64.egg
 
 ## Package marathon
 
